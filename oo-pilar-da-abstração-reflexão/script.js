@@ -51,6 +51,8 @@ console.log(cadeiras)
 
 */
 
+/*
+
 //PARADÍGMA DE ORIENTAÇÃO A OBJETOS
 class Cadeira {
     constructor(quant_pernas, giratoria, cor) {
@@ -81,3 +83,36 @@ cadeiras.push(new Cadeira(1, true, 'vermelha'))
 console.log(cadeiras)
 //cadeira.girarCadeira()
 //cadeira2.girarCadeira()
+*/
+
+
+class Sofa {
+    constructor(quant_lugares , reclinavel ,cor){
+        this.quant_lugares = quant_lugares
+        this.reclinavel =reclinavel
+        this.cor = cor
+    }
+
+    acentoReclinavel() {
+        if(this.reclinavel === true){
+            console.log('Reclinavel')
+        }  else {
+            console.log('Não é reclinavel')
+        }
+    }
+}
+
+
+let sofas = new Sofa(2,true, 'azul')
+let sofas2 = new Sofa(3, false, 'vermelha')
+
+/*
+let sofas = Array()
+
+sofas.push( new Sofa(3 , true , 'laranja'))
+sofas.push( new Sofa(2 , false, 'azul'))
+
+*/
+
+sofas2.acentoReclinavel()
+//console.log(sofas)
