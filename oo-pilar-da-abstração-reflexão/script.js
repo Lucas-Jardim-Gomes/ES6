@@ -5,6 +5,8 @@
 
 
 //Array de cadeiras
+
+/*
 let cadeiras = Array()
 
 cadeiras[0] = Array()
@@ -46,3 +48,36 @@ console.log(cadeiras)
 
 //girar_cadeira(1)
 
+
+*/
+
+//PARADÍGMA DE ORIENTAÇÃO A OBJETOS
+class Cadeira {
+    constructor(quant_pernas, giratoria, cor) {
+        this.quant_pernas = quant_pernas
+        this.giratoria = giratoria
+        this.cor = cor
+    }
+
+    girarCadeira() {
+        if (this.giratoria === true) {
+            console.log('Girou')
+        } else {
+            console.log('Não é giratória')
+        }
+    }
+}
+
+//let cadeira = new Cadeira(4, false, 'azul')
+//let cadeira2 = new Cadeira(1, true, 'vermelha')
+
+
+let cadeiras = Array()
+
+cadeiras.push(new Cadeira(4, false, 'azul'))
+cadeiras.push(new Cadeira(1, true, 'vermelha'))
+
+
+console.log(cadeiras)
+//cadeira.girarCadeira()
+//cadeira2.girarCadeira()
