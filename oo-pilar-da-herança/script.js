@@ -2,6 +2,7 @@ class Animal {
     constructor() {
         this.cor = ''
         this.tamanho  = null
+        this.peso = null
     }
 
     dormir() {
