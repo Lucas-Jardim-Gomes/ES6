@@ -11,9 +11,9 @@ class Animal {
 }
 
 class Passaro extends Animal{
-    constructor(bico) {
+    constructor(bico, cor, tamanho , peso) {
         //Atributos
-        super('Verde' , 25, 350)
+        super(cor, tamanho , peso)
         this.bico = bico
     }
         //Metodos
@@ -24,8 +24,8 @@ class Passaro extends Animal{
 
 
 class Papagaio extends Passaro {
-    constructor(sabeFalar) {
-        super('Médio')
+    constructor(sabeFalar, cor, tamanho , peso) {
+        super('Médio', cor, tamanho , peso)
         this.sabeFalar = sabeFalar
     }
     
@@ -34,5 +34,8 @@ class Papagaio extends Passaro {
     }
 }
 
-let papagaio = new Papagaio(true)
+let papagaio = new Papagaio(true, 'verde', 25 , 350)
 console.log(papagaio)
+
+let papagaio2 = new Papagaio(false, 'branco', 10 , 80)
+console.log(papagaio2)
