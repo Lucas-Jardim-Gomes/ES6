@@ -45,6 +45,10 @@ class Avestruz extends Passaro{
         console.log('Enterrar a cabeça')
     }
 
+    voar() {
+        console.log('Não sabe voar')
+    }
+
 }
 
 let papagaio = new Papagaio(true, 'verde', 25 , 350)
@@ -54,3 +58,4 @@ papagaio.voar()
 
 let avestruz = new Avestruz()
 avestruz.enterrarCabeca()
+avestruz.voar()
