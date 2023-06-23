@@ -13,6 +13,7 @@ class Produto {
  let produto = new Produto('Notebook', 2200)
  produto.verDescricao()
 
+ //---------------------------------------
 
  let produtoLiteral ={
     descricao: 'Geladeira',
@@ -24,3 +25,5 @@ class Produto {
 
 
  produtoLiteral.verDescricao()
+
+ 
