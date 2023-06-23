@@ -18,12 +18,12 @@ objeto.exibirResumo()
 
 
 let objeto2 = {
-    nome,
+    nomeTeste,
     idade,
     sexo,
     profissao,
-    exibirResumo: function() {
-        console.log(`${this.nome}, ${this.idade} anos, ${this.sexo} é ${this.profissao}`)
+    exibirResumo() {
+        console.log(`${this.nomeTeste}, ${this.idade} anos, ${this.sexo} é ${this.profissao}`)
     }
 }
 
