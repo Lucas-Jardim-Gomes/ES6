@@ -6,4 +6,13 @@ let assinatura = {
     }
 }
 
-console.log(assinatura.descricao);
+console.log(assinatura.descricao)
+
+
+let y = assinatura
+console.log(y.descricao)
+
+y.descricao = 'internet banda larga'
+
+console.log(assinatura.descricao)
+console.log(y.descricao)
