@@ -14,7 +14,14 @@ x()
 if(true){
     var serie = 'One piece'
     x()
-    console.log(serie)
+   console.log(serie)
 }
 
 console.log(serie)
+
+if(true) {
+    let filme = 'madagascar'
+    console.log(filme)
+}
+
+console.log(filme)
